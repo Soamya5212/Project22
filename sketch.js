@@ -1,5 +1,5 @@
 var starImg, fairyImg, bgImg;
-var fairy , fairyVoice;
+var fairy ;
 var star, starBody;
 
 const Engine = Matter.Engine;
@@ -12,14 +12,14 @@ function preload()
 	starImg = loadImage("star.png");
 	fairyImg = loadAnimation("fairyImage1.png","fairyImage2.png");
 	bgImg = loadImage("starNight.png");
-	fairyVoice = loadSound("JoyMusic.mp3");
+	
 
 }
 
 function setup() {
 	createCanvas(800, 600);
 
-	fairyVoice.play();
+
 
 	
 	fairy = createSprite(300, 490);
